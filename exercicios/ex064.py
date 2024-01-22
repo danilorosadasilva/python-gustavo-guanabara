@@ -1,6 +1,7 @@
 n = 0
 count = 0
 soma = 0
+n = int(input('dijite o numero: '))
 while n != 999:
     count += 1
     soma = soma + n

@@ -1,13 +1,18 @@
-
-opçao = ''
-soma = 0
-count = 0
-n = -1
-while n != 0:
-    n = int(input('Digite um numero: '))
+maior = menor = num = soma = count = 0
+per =  'S'
+while per in 'Ss':
+    num = int(input('Digite um numero: '))
     count += 1
-    soma += n
-print(soma, count)
-print(soma / (count-1))
+    soma += num
+    per = str(input('Quer continuar[S/N]: ')).lower().split()[0]
+    if count == 1:
+        maior = menor = num
+    else:
+        if num > maior:
+            maior = num
+        if num < menor:
+            menor = num
+media = soma / count
+print('A media é {}, e o maior é {}'.format(media,maior))
 
 
