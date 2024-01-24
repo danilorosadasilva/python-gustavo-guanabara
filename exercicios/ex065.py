@@ -1,10 +1,11 @@
 maior = menor = num = soma = count = 0
-per =  'S'
-while per in 'Ss':
+while True:
     num = int(input('Digite um numero: '))
     count += 1
     soma += num
     per = str(input('Quer continuar[S/N]: ')).lower().split()[0]
+    if per == 'S':
+        break
     if count == 1:
         maior = menor = num
     else:
