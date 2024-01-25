@@ -1,5 +1,5 @@
 n = 0
-while n >= 0:
+while True:
     n = int(input('qual tabuada vc quer: '))
     if n < 0:
         break
