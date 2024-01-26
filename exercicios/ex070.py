@@ -12,21 +12,16 @@ while True:
     if preço > 1000:
         mais_de_1000 += 1
     soma_do_preço += preço
-    if count == 0:
-        maior = menor = preço
-    else:
-        if maior < preço:
-            maior = preço
-            nome_do_produto = nome
-        if menor > preço:
-            menor = preço
+    if count == 0 or maior < preço:
+        maior = preço
+        nome_do_produto = nome
     while ter not in 'SN':
-        ter = str(input('terminar[S/N]:')).strip().upper()
+        ter = str(input('terminar[S/N]:')).strip().upper()[0]
     if ter == 'S':
         break
     count += 1
 print('-'*30)
 print(f'O total da compra ficou em {soma_do_preço}R$')
-print(f'{mais_de_1000} produtos custam mais de 1.000 reais')
+print(f'{mais_de_1000} é o produto custam mais de 1.000 reais')
 print(f'{nome_do_produto} foi o produto mais caro')
 print('-'*30)
