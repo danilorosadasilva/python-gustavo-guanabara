@@ -1,2 +1,4 @@
-n = int(input('Digite o numero: '))
-#print(f'O 9 apareceu {}')
+n = ()
+for n in range(2):
+    n = int(input('Digite o numero: '))
+print(n)
