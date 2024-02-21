@@ -1,7 +1,7 @@
 lista = []
 while True:
     lista.append(int(input('Incira o valor: ')))
-    saida = str(input('Quer sair[S/N]: ')).strip().upper()
+    saida = str(input('Quer sair[S/N]: ')).strip().upper()[0]
     if saida == 'S':
         break
 par = []
