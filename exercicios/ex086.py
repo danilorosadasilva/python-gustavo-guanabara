@@ -6,5 +6,7 @@ for ind,i in enumerate(lista_das_coisas):
         count += 1
     lista[count].append(int(input(f'Dijite um valor para {i}: ')))
 
+
+print('-'*30)
 for i in lista:
-    print(i)
+    print(f'[ {i[0]} ] [ {i[1]} ] [ {i[2]} ]')

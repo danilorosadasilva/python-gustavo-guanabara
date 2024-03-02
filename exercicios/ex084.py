@@ -2,8 +2,8 @@ dados = []
 cadastro = []
 
 while True:
-    cadastro.append(input('Nome: '))
-    cadastro.append(input('Idade: '))
+    cadastro.append(str(input('Nome: ')))
+    cadastro.append(str(input('Idade: ')))
     cadastro.append(float(input('Peso: ')))
     dados.append(cadastro[:])
     cadastro.clear()
