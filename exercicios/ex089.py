@@ -37,4 +37,3 @@ while True:
         print('-'*50)
         print(f'{boletim[sub][0]:<10}  |  {boletim[sub][1]:.2f}  | {boletim[sub][2]:.2f}')
         print('-'*50)
-        
